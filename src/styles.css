@@ -185,3 +185,9 @@ th.num .sort { margin-left: auto; }
   .bars li { grid-template-columns: 84px 1fr 64px; gap: 8px; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+/* Mouse users: move arrows appear on hover/focus so short names keep one line; touch keeps them always visible. */
+@media (hover: hover) and (pointer: fine) {
+  .lead-link { padding-right: 0; }
+  .lead-move { opacity: 0; transition: opacity .15s; background: var(--surface); border-radius: 9px; box-shadow: -12px 0 10px var(--surface); }
+  .lead:hover .lead-move, .lead:focus-within .lead-move { opacity: 1; }
+}
