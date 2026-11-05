@@ -170,7 +170,7 @@ th.num .sort { margin-left: auto; }
   .top { flex-wrap: wrap; padding: 10px 16px; gap: 8px; }
   nav { order: 3; flex-basis: 100%; overflow-x: auto; }
   .tools { margin-left: auto; }
-  .tools .btn span { display: none; }
+  .tools .btn span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   .tools .btn { width: 38px; padding: 0; }
   .stats { width: 100%; }
   .stats div { flex: 1; padding: 8px 10px; }
